@@ -1,0 +1,38 @@
+{
+  "name": "raza-jewellers",
+  "version": "0.1.0",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^3.2.1",
+    "material-ui": "^1.0.0-beta.11",
+    "nuka-carousel": "^2.0.4",
+    "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-addons-transition-group": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-responsive-carousel": "^3.1.17",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-scrollable-anchor": "^0.4.2",
+    "react-scrollchor": "^4.0.0",
+    "react-slick": "^0.14.11",
+    "reactstrap": "^4.8.0",
+    "slick-carousel": "^1.6.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

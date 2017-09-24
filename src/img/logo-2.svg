@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2832.5 494 508 31">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 26px;
+        font-family: CenturyGothic, Century Gothic;
+        letter-spacing: 0.4em;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+      }
+    </style>
+  </defs>
+  <g id="Group_32" data-name="Group 32" transform="translate(2123 298)">
+    <text id="SINCE_1980" data-name="SINCE 1980" class="cls-1" transform="translate(848 221)"><tspan x="0" y="0">SINCE 1980</tspan></text>
+    <line id="Line_5" data-name="Line 5" class="cls-2" x2="117" transform="translate(709.5 211.5)"/>
+    <line id="Line_6" data-name="Line 6" class="cls-2" x2="117" transform="translate(1100.5 211.5)"/>
+  </g>
+</svg>
