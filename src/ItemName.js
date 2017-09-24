@@ -1,17 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import './App.css';
-import call from "./call.gif";
-import text from "./giphy.gif";
-import Phone from "./phone.gif";
-import img1 from "../src/Orient.jpg";
-import img2 from "../src/palace.jpg";
-import img3 from "../src/bgm.jpg";
-import bahria from "./bahria_town_logo.png";
-import badge from "./badge-black.png";
-import Deal from "./deal.png";
-import Register from "./register.png";
-import Earn from "./earn.png";
 import Logo from "./img/logo-2D.png";
 import Logo3D from "./img/logo-3d.svg";
 import Gold from "./img/gold.png";

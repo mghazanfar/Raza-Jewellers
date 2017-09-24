@@ -1,5 +1,4 @@
 import React from 'react';
-import Partner from './Partner';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import './App.css';
 import Logo1 from './img/logo-1.svg';
