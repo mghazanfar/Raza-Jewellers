@@ -240,11 +240,11 @@ export default class ItemName extends React.Component {
                     <li className=""><h4>Go Social</h4></li>
                     <li>
                       <div className="pt-3 d-flex justify-content-between w-75 ml-auto">
-                        <a href="https://www.facebook.com/MeerFix-1912420172349537"><img src={Facebook} className="size-logo"/></a>
-                        <a href="https://www.facebook.com/MeerFix-1912420172349537"><img src={Google} className="size-logo"/></a>
-                        <a href="https://www.facebook.com/MeerFix-1912420172349537"><img src={Instagram} className="size-logo"/></a>
-                        <a href="https://www.facebook.com/MeerFix-1912420172349537"><img src={Pinterest} className="size-logo"/></a>
-                        <a href="https://www.facebook.com/MeerFix-1912420172349537"><img src={Twitter} className="size-logo"/></a>
+                        <a href="www.facebook.com/razajewellers"><img src={Facebook} className="size-logo"/></a>
+                        <a href="www.plus.google.com/u/2/111738976259678807436"><img src={Google} className="size-logo"/></a>
+                        <a href="www.instagram.com/razajewellers"><img src={Instagram} className="size-logo"/></a>
+                        <a href="www.pinterest.com/razajewellers"><img src={Pinterest} className="size-logo"/></a>
+                        <a href="www.twitter.com/razajewellers"><img src={Twitter} className="size-logo"/></a>
                       </div>
                     </li>
 
