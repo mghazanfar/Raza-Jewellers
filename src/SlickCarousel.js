@@ -27,9 +27,9 @@ export default class SimpleSlider extends React.Component {
     return (
       <div className="">
         <Carousel autoplay={true} wrapAround={true} autoplayInterval={4000}>
-          <img src={imge1}/>
-          <img src={imge2}/>
-          <img src={imge3}/>
+          <img src={imge1} onLoad={() => {window.dispatchEvent(new Event('resize'));}}/>
+          <img src={imge2} onLoad={() => {window.dispatchEvent(new Event('resize'));}}/>
+          <img src={imge3} onLoad={() => {window.dispatchEvent(new Event('resize'));}}/>
         </Carousel>
       </div>
     );
