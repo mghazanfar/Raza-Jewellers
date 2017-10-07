@@ -13,10 +13,20 @@ body {
 	width: 99% !important;
 }
 
+.size-logo {
+    width: 32px;
+    height: 32px;
+}
 
 .App {
   text-align: center;
 }
+
+@media (min-width: 992px) and (max-width: 1084px) {
+	.mr--0 {
+		margin-right: 0px !important;
+	}
+ }
 
 .bgAbout {
   background-image: url(../src/img/BigAboutUs.png);
@@ -42,6 +52,15 @@ body {
 .bb-white {
   border-bottom: 1px solid white;
 }
+
+@media (max-width: 767px) {
+	.bt-white-md {
+	  border-top: 1px solid white;
+		margin-top: 1rem !important;
+	}
+ }
+
+
 
 .bb-black {
   border-bottom: 1px solid black;

@@ -44,9 +44,9 @@ export default class Navbarr extends React.Component {
               <div className="d-flex w-100 justify-content-around">
 
                 <div className="ml-md-3 ml-lg-0">
-                  <NavLink  to="/about" className="navbar-brand text-uppercase margin-0">About Us</NavLink >
-                  <NavLink  to="/jewellery" className="navbar-brand text-uppercase margin-0">Jewellery</NavLink >
-                  <NavLink  to="/collections" className="navbar-brand text-uppercase margin-0">Collections</NavLink >
+                  <NavLink  to="/about" className="navbar-brand text-uppercase mr--0">About Us</NavLink >
+                  <NavLink  to="/jewellery" className="navbar-brand text-uppercase mr--0">Jewellery</NavLink >
+                  <NavLink  to="/collections" className="navbar-brand text-uppercase  mr--0">Collections</NavLink >
 
                 </div>
                 <div className="d-flex align-items-center">
@@ -54,9 +54,9 @@ export default class Navbarr extends React.Component {
                 </div>
 
               <div className="d-flex ml-md-3 ml-lg-0">
-                  <Scrollchor to="#services" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase margin-0">Media</Scrollchor>
-                  <Scrollchor to="#services" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase margin-0">promotions</Scrollchor>
-                  <Scrollchor to="#services" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase margin-0">Follow Us</Scrollchor>
+                  <Scrollchor to="#services" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase  mr--0">Media</Scrollchor>
+                  <Scrollchor to="#services" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase  mr--0">promotions</Scrollchor>
+                  <Scrollchor to="#services" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase  mr--0">Follow Us</Scrollchor>
               </div>
 
 

@@ -29,12 +29,12 @@ export default class ItemName extends React.Component {
       <Container>
         <img src={Logo} className="my-4" width="70px" height="110px" />
         <Row className="justify-content-center">
-          <Col className="bb-black mb-4">
+          <Col xs="2" sm="3" md="4" className="bb-black mb-4">
           </Col>
-          <Col xs="3">
+          <Col xs="8" sm="5" md="4">
             <h3 className="text-black text-uppercase">Contact us</h3>
           </Col>
-          <Col className="bb-black mb-4">
+          <Col xs="2" sm="3" md="4" className="bb-black mb-4">
           </Col>
         </Row>
       </Container>
@@ -87,15 +87,14 @@ export default class ItemName extends React.Component {
      return (
        <div id="partners" style={{overflow:'hidden'}}>
          <Container>
-           <div className="w-100 h-100 ml-400" style={style, {backgroundImage: "url(" + this.props.img + ")", backgroundSize:'cover', position:'absolute',}}></div>
            <img src={Logo} className="my-4" width="70px" height="110px" />
            <Row className="justify-content-center">
-             <Col  className="bb-black mb-4">
+             <Col xs="2" sm="3" md="4" className="bb-black mb-4">
              </Col>
-             <Col xs="3">
+             <Col xs="8" sm="5" md="4">
                <h3 className="text-black text-uppercase">collections</h3>
              </Col>
-             <Col className="bb-black mb-4">
+             <Col xs="2" sm="3" md="4" className="bb-black mb-4">
              </Col>
            </Row>
            <Row>
@@ -127,12 +126,12 @@ export default class ItemName extends React.Component {
               </div>
               <Container>
                 <Row className="justify-content-center">
-                  <Col xs="4" className="bb-white mb-4">
+                  <Col xs="3" md="4" className="bb-white mb-4">
                   </Col>
-                  <Col xs="2">
+                  <Col xs="5" sm="4" md="3" lg="2">
                     <h3 className="text-white">About Us</h3>
                   </Col>
-                  <Col xs="4" className="bb-white mb-4">
+                  <Col xs="3" md="4" className="bb-white mb-4">
                   </Col>
                   <Col xs="12">
                     <p className="text-center text-white">The organization started in 1980 by Mr. RAZA Mahmood. RAZA Jewellers, a premier "Pakistan's" jewelry manufacturer, is a full service production company assisting fine jewelry retailers and designers for over a quarter century. Our heritage and reputation for quality makes us the single best source for all of your jewelry manufacturing needs.</p>
@@ -153,29 +152,37 @@ export default class ItemName extends React.Component {
       <Container>
         <img src={Logo} className="my-4" width="70px" height="110px" />
         <Row className="justify-content-center">
-          <Col xs="5" className="bb-black mb-4">
+          <Col xs="2" sm="3" md="4" className="bb-black mb-4">
           </Col>
-          <Col xs="2">
+          <Col xs="8" sm="5" sm="4" md="3">
             <h3 className="text-black text-uppercase">jewellery</h3>
           </Col>
-          <Col xs="5" className="bb-black mb-4">
+          <Col xs="2" sm="3" md="4" className="bb-black mb-4">
           </Col>
         </Row>
         <Row className="justify-content-center my-5  no-gutters">
-          <Col xs="5" className="">
-          <img src={Gold} className="h-100 w-100 img-fluid" />
+          <Col md="8" lg="5" className="">
+            <a href="#"><img src={Gold} className="h-100 w-100 img-fluid" /></a>
           </Col>
-          <Col xs="3">
+          <Col lg="3" className="hidden-md-down">
             <Row>
-              <img src={Diamond} className="h-100 w-100 img-fluid" />
+              <a href="#"><img src={Diamond} className="h-100 w-100 img-fluid" /></a>
             </Row>
             <Row>
-              <img src={Watches} className="w-100 img-fluid" />
+              <a href="#"><img src={Watches} className="w-100 img-fluid" /></a>
             </Row>
           </Col>
-          <Col xs="4">
-            <img src={Pearl} className="h-100 w-100 img-fluid" />
+          <Col md="4" lg="4">
+            <a href="#"><img src={Pearl} className="h-100 w-100 img-fluid" /></a>
           </Col>
+          <Row md="12" lg="3" className="hidden-lg-up no-gutters">
+            <Col xs="6">
+              <a href="#"><img src={Diamond} className="h-75 w-100 img-fluid" /></a>
+            </Col>
+            <Col xs="6">
+              <a href="#"><img src={Watches} className="w-100 h-75 img-fluid" /></a>
+            </Col>
+          </Row>
         </Row>
       </Container>
     </div>
@@ -186,12 +193,12 @@ export default class ItemName extends React.Component {
           <Container>
             <img src={Logo} className="my-4" width="70px" height="110px" />
             <Row className="justify-content-center">
-              <Col xs="5" className="bb-black mb-4">
+              <Col xs="2" sm="3" md="4" className="bb-black mb-4">
               </Col>
-              <Col xs="2">
+              <Col xs="8" sm="5" md="4">
                 <h3 className="text-black text-uppercase">media</h3>
               </Col>
-              <Col xs="5" className="bb-black mb-4">
+              <Col xs="2" sm="3" md="4" className="bb-black mb-4">
               </Col>
             </Row>
           </Container>
@@ -219,9 +226,9 @@ export default class ItemName extends React.Component {
            <div  className="py-5" style={style}>
              <br/>
                <Container>
-                 <Row>
-                   <Col className="bb-white px-0 mb-5">
-                    <ul className="list-unstyled text-left text-grey">
+                 <Row className="justify-content-center">
+                   <Col xs="12" md="4" className="bb-white px-0 mb-5">
+                    <ul className="list-unstyled text-center text-md-left text-grey">
 
                       <li><h4>Opening Hours</h4></li>
                       <li>11:30am to 9:00pm, Sunday Close</li>
@@ -231,14 +238,23 @@ export default class ItemName extends React.Component {
                       <li>+92423578133, +923219888863, +923214669924.</li>
                     </ul>
                    </Col>
-                   <Col xs="12" md="3" className="">
+                   <Col xs="12" md="4" className="px-md-0">
                     <img src={Logo3D} height="180px" width="180px" />
-                    <img src={Logo1} className="mt-3 img-fluid text-white" width="230px" />
+                    <img src={Logo1} className="mt-3 text-white" width="230px" />
                    </Col>
-                   <Col className="bb-white px-0 mb-5">
-                    <ul className="list-unstyled text-right text-grey">
+                   <Col xs="12" md="4" className="bt-white-md bb-white px-0 mb-5 mt-5 mt-md-0">
+                    <ul className="list-unstyled text-center text-md-right text-grey mt-5 mt-md-0">
                     <li className=""><h4>Go Social</h4></li>
-                    <li>
+                    <li className="hidden-md-up">
+                      <div className="pt-3 d-flex justify-content-between w-100 ml-auto">
+                        <a href="www.facebook.com/razajewellers"><img src={Facebook} className="size-logo"/></a>
+                        <a href="www.plus.google.com/u/2/111738976259678807436"><img src={Google} className="size-logo"/></a>
+                        <a href="www.instagram.com/razajewellers"><img src={Instagram} className="size-logo"/></a>
+                        <a href="www.pinterest.com/razajewellers"><img src={Pinterest} className="size-logo"/></a>
+                        <a href="www.twitter.com/razajewellers"><img src={Twitter} className="size-logo"/></a>
+                      </div>
+                    </li>
+                    <li className="hidden-sm-down">
                       <div className="pt-3 d-flex justify-content-between w-75 ml-auto">
                         <a href="www.facebook.com/razajewellers"><img src={Facebook} className="size-logo"/></a>
                         <a href="www.plus.google.com/u/2/111738976259678807436"><img src={Google} className="size-logo"/></a>

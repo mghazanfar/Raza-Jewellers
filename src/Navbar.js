@@ -72,7 +72,8 @@ export default class Navbarr extends React.Component {
               type="search"
               className={styles.textField}
               margin="none"
-              style={{width:50}}
+              style={{width:50, color:'black'}}
+              fullWidth={true}
             />
         </div>
         </div>
