@@ -14,9 +14,33 @@ import Google from './img/google.svg';
 import Instagram from './img/instagram.svg';
 import Pinterest from './img/pinterest.svg';
 import Twitter from './img/twitter.svg';
+import { withStyles } from 'material-ui/styles';
+import TextField from 'material-ui/TextField';
+import PropTypes from 'prop-types';
+import Buttons from 'material-ui/Button';
+
+const styles = theme => ({
+  textField: {
+    marginLeft: theme.spacing.unit,
+    marginRight: theme.spacing.unit,
+    width: 200,
+    color:'white'
+  },
+});
 
 
 export default class ItemName extends React.Component {
+  state = {
+    name: 'Cat in the Hat',
+    age: '',
+    multiline: '',
+    currency: 'EUR',
+  };
+  handleChange = name => event => {
+    this.setState({
+      [name]: event.target.value,
+    });
+  };
   render() {
       var style = {
      color: this.props.color,
@@ -43,40 +67,72 @@ export default class ItemName extends React.Component {
         <Row className="justify-content-center pt-5" >
           <Col xs="6" className="py-5">
             <Form>
-              <FormGroup className="text-black text-left">
-                <Label for="exampleEmail">*Name</Label>
-                <Input type="email" name="email" id="exampleEmail" placeholder="Please enter your good name" className="rounded-0 py-3"/>
-              </FormGroup>
-              <FormGroup className="text-black text-left">
-                <Label for="exampleEmail">*Phone</Label>
-                <Input type="email" name="email" id="exampleEmail" placeholder="Please enter your good name" className="rounded-0 py-3"/>
-              </FormGroup>
-              <FormGroup className="text-black text-left">
-                <Label for="exampleEmail">*Address</Label>
-                <Input type="email" name="email" id="exampleEmail" placeholder="Please enter your good name" className="rounded-0 py-3"/>
-              </FormGroup>
-              <FormGroup className="text-black text-left">
-                <Label for="exampleEmail">*Visiting through (e.g. Facebook, Friend, etc.)</Label>
-                <Input type="email" name="email" id="exampleEmail" placeholder="Please enter your good name" className="rounded-0 py-3"/>
-              </FormGroup>
+              <TextField
+                label="Name*"
+                placeholder="Please enter your good name"
+                multiline
+                className={styles.textField}
+                margin="normal"
+                fullWidth={true}
+              />
+              <TextField
+                label="Phone*"
+                placeholder="Please enter your Phone number"
+                multiline
+                className={styles.textField}
+                margin="normal"
+                fullWidth={true}
+              />
+              <TextField
+                label="Address*"
+                placeholder="Please write your address here"
+                multiline
+                className={styles.textField}
+                margin="normal"
+                fullWidth={true}
+              />
+              <TextField
+                label="Visiting Through (e.g. Facebook, Friend, etc.)*"
+                placeholder="Facebook"
+                multiline
+                className={styles.textField}
+                margin="normal"
+                fullWidth={true}
+                style={{marginTop:23}}
+              />
             </Form>
           </Col>
           <Col xs="6" className="py-5">
-            <Form>
-              <FormGroup className="text-black text-left">
-                <Label for="exampleDate">*Birthday</Label>
-                <Input type="date" name="date" id="exampleDate" placeholder="date placeholder" className="rounded-0 py-3"/>
-              </FormGroup>
-            <FormGroup className="text-black text-left">
-              <Label for="exampleText">*Suggestions/Feedback:</Label>
-              <Input type="textarea" name="text" id="exampleText" className="rounded-0 h-16"/>
-            </FormGroup>
+            <Form style={{marginTop:22}}>
+              <TextField
+                id="date"
+                label="Birthday*"
+                type="date"
+                defaultValue="2017-05-24"
+                className={styles.textField}
+                InputLabelProps={{
+                shrink: true,
+                }}
+                fullWidth={true}
+              />
+              <TextField
+                id="multiline-flexible"
+                label="Multiline*"
+                multiline
+                fullWidth={true}
+                value={this.state.multiline}
+                onChange={this.handleChange('multiline')}
+                style={styles.textField}
+                rows={8}
+                margin="normal"
+              />
+
            </Form>
           </Col>
         </Row>
         <Row className="justify-content-end pb-5">
           <Col xs="3" className="text-right">
-            <Button outline color="secondary" className="text-white rounded-0 btn-block">Submit</Button>
+            <Buttons color="contrast">Submit</Buttons>
           </Col>
         </Row>
       </Container>
@@ -223,11 +279,11 @@ export default class ItemName extends React.Component {
       else if(this.props.divName=="Footer"){
        return (
          <div id="about">
-           <div  className="py-5" style={style}>
+           <div  className="py-sm-5 py-0" style={style}>
              <br/>
                <Container>
                  <Row className="justify-content-center">
-                   <Col xs="12" md="4" className="bb-white px-0 mb-5">
+                   <Col xs="10" md="4" className="bb-white px-0 mb-5">
                     <ul className="list-unstyled text-center text-md-left text-grey">
 
                       <li><h4>Opening Hours</h4></li>
@@ -242,25 +298,25 @@ export default class ItemName extends React.Component {
                     <img src={Logo3D} height="180px" width="180px" />
                     <img src={Logo1} className="mt-3 text-white" width="230px" />
                    </Col>
-                   <Col xs="12" md="4" className="bt-white-md bb-white px-0 mb-5 mt-5 mt-md-0">
+                   <Col xs="10" md="4" className="bt-white-md bb-white px-0 mb-5 mt-5 mt-md-0">
                     <ul className="list-unstyled text-center text-md-right text-grey mt-5 mt-md-0">
                     <li className=""><h4>Go Social</h4></li>
                     <li className="hidden-md-up">
                       <div className="pt-3 d-flex justify-content-between w-100 ml-auto">
-                        <a href="www.facebook.com/razajewellers"><img src={Facebook} className="size-logo"/></a>
-                        <a href="www.plus.google.com/u/2/111738976259678807436"><img src={Google} className="size-logo"/></a>
-                        <a href="www.instagram.com/razajewellers"><img src={Instagram} className="size-logo"/></a>
-                        <a href="www.pinterest.com/razajewellers"><img src={Pinterest} className="size-logo"/></a>
-                        <a href="www.twitter.com/razajewellers"><img src={Twitter} className="size-logo"/></a>
+                        <a href="https://www.facebook.com/razajewellers"><img src={Facebook} className="size-logo"/></a>
+                        <a href="https://www.plus.google.com/u/2/111738976259678807436"><img src={Google} className="size-logo"/></a>
+                        <a href="https://www.instagram.com/razajewellers"><img src={Instagram} className="size-logo"/></a>
+                        <a href="https://www.pinterest.com/razajewellers"><img src={Pinterest} className="size-logo"/></a>
+                        <a href="https://www.twitter.com/razajewellers"><img src={Twitter} className="size-logo"/></a>
                       </div>
                     </li>
                     <li className="hidden-sm-down">
                       <div className="pt-3 d-flex justify-content-between w-75 ml-auto">
-                        <a href="www.facebook.com/razajewellers"><img src={Facebook} className="size-logo"/></a>
-                        <a href="www.plus.google.com/u/2/111738976259678807436"><img src={Google} className="size-logo"/></a>
-                        <a href="www.instagram.com/razajewellers"><img src={Instagram} className="size-logo"/></a>
-                        <a href="www.pinterest.com/razajewellers"><img src={Pinterest} className="size-logo"/></a>
-                        <a href="www.twitter.com/razajewellers"><img src={Twitter} className="size-logo"/></a>
+                        <a href="https://www.facebook.com/razajewellers"><img src={Facebook} className="size-logo"/></a>
+                        <a href="https://www.plus.google.com/u/2/111738976259678807436"><img src={Google} className="size-logo"/></a>
+                        <a href="https://www.instagram.com/razajewellers"><img src={Instagram} className="size-logo"/></a>
+                        <a href="https://www.pinterest.com/razajewellers"><img src={Pinterest} className="size-logo"/></a>
+                        <a href="https://www.twitter.com/razajewellers"><img src={Twitter} className="size-logo"/></a>
                       </div>
                     </li>
 
