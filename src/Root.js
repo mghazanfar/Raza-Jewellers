@@ -14,7 +14,7 @@ import Store from './img/store.png';
 class Root extends Component {
   render() {
     return (
-      <div className="slickMargin">
+      <div className="slickMargin mt-lg-0">
 
         <Slick className="mt-5"/>
 
