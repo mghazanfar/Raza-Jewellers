@@ -37,7 +37,7 @@ export default class Navbarr extends React.Component {
    };
     return (
         <div>
-          <nav className="navbar navbar-toggleable-sm navbar-light justify-content-center align-items-start pt-0">
+          <nav className="navbar navbar-toggleable-sm navbar-light justify-content-center align-items-start pt-0 hidden-md-down">
             <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>

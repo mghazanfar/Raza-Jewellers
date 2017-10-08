@@ -65,7 +65,7 @@ export default class ItemName extends React.Component {
       <div className="px-0 mt-5" style={{backgroundImage: "url(" + this.props.img + ")", backgroundSize:'cover',}}>
       <Container>
         <Row className="justify-content-center pt-5" >
-          <Col xs="6" className="py-5">
+          <Col xs="12" md="6" className="py-5">
             <Form>
               <TextField
                 label="Name*"
@@ -98,11 +98,11 @@ export default class ItemName extends React.Component {
                 className={styles.textField}
                 margin="normal"
                 fullWidth={true}
-                style={{marginTop:23}}
+                style={{marginTop:23, textAlign:'left'}}
               />
             </Form>
           </Col>
-          <Col xs="6" className="py-5">
+          <Col xs="12" md="6" className="py-5">
             <Form style={{marginTop:22}}>
               <TextField
                 id="date"
@@ -193,7 +193,7 @@ export default class ItemName extends React.Component {
                     <p className="text-center text-white">The organization started in 1980 by Mr. RAZA Mahmood. RAZA Jewellers, a premier "Pakistan's" jewelry manufacturer, is a full service production company assisting fine jewelry retailers and designers for over a quarter century. Our heritage and reputation for quality makes us the single best source for all of your jewelry manufacturing needs.</p>
                   </Col>
                   <Col xs="12">
-                    <Button outline color="secondary" className="rounded-0 text-white mb-4">Find out More</Button>
+                    <Buttons color="contrast" className="mb-4">Find out More</Buttons>
                   </Col>
                 </Row>
               </Container>
