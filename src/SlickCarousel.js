@@ -24,9 +24,27 @@ export default class SimpleSlider extends React.Component {
       fade: true,
       cssEase: 'linear'
     };
+
+    var Decorators = [{
+        component: React.createClass({
+          render() {
+            return (
+              <button
+                onClick={this.props.previousSlide}>
+                Previous Slide
+              </button>
+            )
+          }
+        }),
+        position: 'CenterLeft',
+        style: {
+        	padding: 20, display:'none',
+        }
+      }];
+      
     return (
       <div className="">
-        <Carousel autoplay={true} wrapAround={true} autoplayInterval={4000}>
+        <Carousel autoplay={true} wrapAround={true} autoplayInterval={4000} decorators={Decorators}>
           <img src={imge1} onLoad={() => {window.dispatchEvent(new Event('resize'));}}/>
           <img src={imge2} onLoad={() => {window.dispatchEvent(new Event('resize'));}}/>
           <img src={imge3} onLoad={() => {window.dispatchEvent(new Event('resize'));}}/>

@@ -37,12 +37,9 @@ export default class Navbarr extends React.Component {
    };
     return (
         <div>
-          <nav className="navbar navbar-toggleable-sm navbar-light justify-content-center align-items-start pt-0 hidden-md-down">
-            <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-              <div className="d-flex w-100 justify-content-around">
+          <nav className="navbar navbar-light justify-content-center align-items-center pt-0 hidden-nav2">
 
+              <div className="d-inline-flex">
                 <div className="ml-md-3 ml-lg-0">
                   <NavLink  to="/about" className="navbar-brand text-uppercase mr--0">About Us</NavLink >
                   <NavLink  to="/jewellery" className="navbar-brand text-uppercase mr--0">Jewellery</NavLink >
@@ -50,13 +47,13 @@ export default class Navbarr extends React.Component {
 
                 </div>
                 <div className="d-flex align-items-center">
-                  <NavLink  to="/"><img src={Logo2} width="300" className="d-inline-block align-top" alt=""/></NavLink >
+                  <NavLink  to="/"><img src={Logo2} width="400" className="d-inline-block align-top marginImg" alt=""/></NavLink >
                 </div>
 
               <div className="d-flex ml-md-3 ml-lg-0">
-                  <Scrollchor to="#services" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase  mr--0">Media</Scrollchor>
-                  <Scrollchor to="#services" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase  mr--0">promotions</Scrollchor>
-                  <Scrollchor to="#services" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase  mr--0">Follow Us</Scrollchor>
+                  <Scrollchor to="#media" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase  mr--0">Media</Scrollchor>
+                  <Scrollchor to="#promotions" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase  mr--0">promotions</Scrollchor>
+                  <Scrollchor to="#footer" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase  mr--0">Follow Us</Scrollchor>
               </div>
 
 

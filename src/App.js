@@ -23,9 +23,9 @@ class App extends Component {
     return (
 
     <Router>
-      <div className="App" id="top">
+      <div id="top">
 
-        <Navbar className="hidden-sm-down"/>
+        <Navbar/>
 
         <Navbar2 className=""/>
 

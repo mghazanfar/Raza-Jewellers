@@ -49,8 +49,8 @@ export default class ItemName extends React.Component {
    };
    if(this.props.divName=="Contact"){
     return (
-      <div id="reviews">
-      <Container>
+      <div id="contact">
+      <Container className="text-center">
         <img src={Logo} className="my-4" width="70px" height="110px" />
         <Row className="justify-content-center">
           <Col xs="2" sm="3" md="4" className="bb-black mb-4">
@@ -142,7 +142,7 @@ export default class ItemName extends React.Component {
     else if(this.props.divName=="collections"){
      return (
        <div id="partners" style={{overflow:'hidden'}}>
-         <Container>
+         <Container className="text-center">
            <img src={Logo} className="my-4" width="70px" height="110px" />
            <Row className="justify-content-center">
              <Col xs="2" sm="3" md="4" className="bb-black mb-4">
@@ -174,7 +174,7 @@ export default class ItemName extends React.Component {
       return (
       <div id="About Us" className="my-5">
 
-        <Container>
+        <Container className="text-center">
           <Row className="justify-content-center">
             <Col xs="12"><div className="w-100 h-100" style={style, {backgroundImage: "url(" + this.props.img + ")", backgroundSize:'cover', position:'absolute'}}></div>
               <div style={{position:'relative'}}>
@@ -205,7 +205,7 @@ export default class ItemName extends React.Component {
      else if(this.props.divName=="Jewellery"){
       return (
     <div id="easy">
-      <Container>
+      <Container className="text-center">
         <img src={Logo} className="my-4" width="70px" height="110px" />
         <Row className="justify-content-center">
           <Col xs="2" sm="3" md="4" className="bb-black mb-4">
@@ -245,8 +245,8 @@ export default class ItemName extends React.Component {
       );}
      else if(this.props.divName=="Media"){
       return (
-        <div id="tryUs">
-          <Container>
+        <div id="media">
+          <Container className="text-center">
             <img src={Logo} className="my-4" width="70px" height="110px" />
             <Row className="justify-content-center">
               <Col xs="2" sm="3" md="4" className="bb-black mb-4">
@@ -265,8 +265,16 @@ export default class ItemName extends React.Component {
               </Col>
             </Row>
           </div>
-          <Container>
+          <Container className="text-center" id="promotions">
+            <img src={Logo} className="my-4" width="70px" height="110px" />
             <Row className="justify-content-center">
+              <Col xs="2" sm="3" md="4" className="bb-black mb-4">
+              </Col>
+              <Col xs="8" sm="5" sm="4" md="3">
+                <h3 className="text-black text-uppercase">Promotions</h3>
+              </Col>
+              <Col xs="2" sm="3" md="4" className="bb-black mb-4">
+              </Col>
               <Col xs="12" className="my-5">
                 <img src={Sale} className="img-fluid"/>
               </Col>
@@ -278,7 +286,7 @@ export default class ItemName extends React.Component {
       );}
       else if(this.props.divName=="Footer"){
        return (
-         <div id="about">
+         <div id="footer">
            <div  className="py-sm-5 py-0" style={style}>
              <br/>
                <Container>

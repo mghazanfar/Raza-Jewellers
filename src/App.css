@@ -18,15 +18,26 @@ body {
     height: 32px;
 }
 
-.App {
-  text-align: center;
-}
 
 @media (min-width: 992px) and (max-width: 1084px) {
 	.mr--0 {
 		margin-right: 0px !important;
 	}
  }
+
+ .marginImg {
+	 margin-left: 1.5rem;
+	 margin-right: 2rem;
+ }
+
+
+.textUnderline {
+	text-decoration: none;
+}
+
+.textUnderline:hover {
+	text-decoration: underline !important;
+}
 
 .bgAbout {
   background-image: url(../src/img/BigAboutUs.png);
@@ -60,6 +71,12 @@ body {
 	}
  }
 
+ @media (max-width: 1243px) {
+	 	.hidden-nav2 {
+			display: none !important;
+	 	}
+  }
+
 
 
 .bb-black {
@@ -73,13 +90,15 @@ body {
 .slick-prev {
   left: 29px !important;
   z-index: 1;
+	display: none;
 }
 
 .slick-next {
   right: 29px !important;
+	display: none;
 }
 
 
 .slickMargin {
-  margin-top: 3.5rem !important;
+  margin-top: 5.35rem !important;
 }
