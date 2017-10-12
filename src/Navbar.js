@@ -52,7 +52,7 @@ export default class Navbarr extends React.Component {
 
         <div className="d-flex w-100 justify-content-between">
           <div className="d-flex">
-            <Scrollchor to="#store" animate={{offset: -50, duration: 800}}  className="navbar-brand mt-md-3"><img src={Map} width="22px" height="19px" style={{marginBottom:5, marginRight:"1rem"}} />Store</Scrollchor>
+            <Scrollchor to="#Map" animate={{offset: -50, duration: 800}}  className="navbar-brand mt-md-3"><img src={Map} width="22px" height="19px" style={{marginBottom:5, marginRight:"1rem"}} />Store</Scrollchor>
           </div>
 
           <div className="d-flex align-items-center" style={{marginLeft:'9rem'}}>

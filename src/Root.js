@@ -26,6 +26,8 @@ class Root extends Component {
 
         <ItemName  color="black" bgColor="white" divName="Media" img={Soon}/>
 
+        <ItemName  color="black" bgColor="white" divName="Map" />
+
         <ItemName  color="black" bgColor="white" divName="Contact" img={Store}/>
 
         <ItemName   color="black" bgColor="#272727" divName="Footer"/>

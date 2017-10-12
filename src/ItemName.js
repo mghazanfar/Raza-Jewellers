@@ -243,6 +243,28 @@ export default class ItemName extends React.Component {
       </Container>
     </div>
       );}
+      else if(this.props.divName=="Map"){
+       return (
+     <div id="Map">
+       <Container className="text-center">
+         <img src={Logo} className="my-4" width="70px" height="110px" />
+         <Row className="justify-content-center">
+           <Col xs="2" sm="3" md="4" className="bb-black mb-4">
+           </Col>
+           <Col xs="8" sm="5" sm="4" md="3">
+             <h3 className="text-black text-uppercase">Store</h3>
+           </Col>
+           <Col xs="2" sm="3" md="4" className="bb-black mb-4">
+           </Col>
+         </Row>
+         <Row className="justify-content-center my-5  no-gutters">
+           <Col xs="11">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.448238253813!2d74.3409553150146!3d31.511846754716156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045bc5d9b23d%3A0x748dbe5642a90987!2zUkFaQSBKZXdlbGxlcnMg2LHYttinINis24zZiNmE2LHYsg!5e0!3m2!1sen!2s!4v1507806747222" width="100%" height="450px" frameBorder="0" style={{border:0}} allowfullscreen></iframe>
+           </Col>
+         </Row>
+       </Container>
+     </div>
+       );}
      else if(this.props.divName=="Media"){
       return (
         <div id="media">
