@@ -18,6 +18,12 @@ body {
     height: 32px;
 }
 
+.slider {
+  height: 100%;
+  width: 15px;
+  background: #CFB53B	;
+	border: 2px solid #D4AF37;
+}
 
 @media (min-width: 992px) and (max-width: 1084px) {
 	.mr--0 {

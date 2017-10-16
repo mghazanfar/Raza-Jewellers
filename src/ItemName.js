@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import './App.css';
 import Logo from "./img/logo-2D.png";
+import Store from "./img/store.png";
 import Logo3D from "./img/logo-3d.svg";
 import Gold from "./img/gold.png";
 import Diamond from "./img/diamond.png";
@@ -18,6 +19,8 @@ import { withStyles } from 'material-ui/styles';
 import TextField from 'material-ui/TextField';
 import PropTypes from 'prop-types';
 import Buttons from 'material-ui/Button';
+import TwentyTwenty from 'react-twentytwenty';
+
 
 const styles = theme => ({
   textField: {
@@ -259,8 +262,12 @@ export default class ItemName extends React.Component {
          </Row>
          <Row className="justify-content-center my-5  no-gutters">
            <Col xs="11">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.448238253813!2d74.3409553150146!3d31.511846754716156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045bc5d9b23d%3A0x748dbe5642a90987!2zUkFaQSBKZXdlbGxlcnMg2LHYttinINis24zZiNmE2LHYsg!5e0!3m2!1sen!2s!4v1507806747222" width="100%" height="450px" frameBorder="0" style={{border:0}} allowfullscreen></iframe>
-           </Col>
+            <TwentyTwenty>
+              <img src={Store} className="w-100 h-100" width="100%" />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.448238253813!2d74.3409553150146!3d31.511846754716156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045bc5d9b23d%3A0x748dbe5642a90987!2zUkFaQSBKZXdlbGxlcnMg2LHYttinINis24zZiNmE2LHYsg!5e0!3m2!1sen!2s!4v1507806747222" width="100%" height="600px" frameBorder="1" style={{border:0}} allowfullscreen />
+              <div className="slider" />
+            </TwentyTwenty>
+            </Col>
          </Row>
        </Container>
      </div>

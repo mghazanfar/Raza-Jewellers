@@ -23,6 +23,7 @@
     "react-scrollable-anchor": "^0.4.2",
     "react-scrollchor": "^4.0.0",
     "react-slick": "^0.14.11",
+    "react-twentytwenty": "^1.0.4",
     "reactstrap": "^4.8.0",
     "slick-carousel": "^1.6.0"
   },
