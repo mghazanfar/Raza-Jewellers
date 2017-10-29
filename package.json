@@ -17,6 +17,7 @@
     "react-addons-css-transition-group": "^15.6.0",
     "react-addons-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",
+    "react-limited-infinite-scroll": "^2.0.4",
     "react-responsive-carousel": "^3.1.17",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",

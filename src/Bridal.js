@@ -15,9 +15,81 @@ import Combo from './img/combo.png';
 import Craftsman from './img/craftsman.png';
 import Logo3D from "./img/logo-3d.svg";
 import Scrollchor from 'react-scrollchor';
+import LimitedInfiniteScroll from 'react-limited-infinite-scroll'
 
+const tileData = [
+   {
+   img: Founder,
+ },
+   {
+   img:  Founder,
+  },
+  {
+  img:  Founder,
+  },
+  {
+  img:  Founder,
+  },
+  {
+  img:  Founder,
+  },{
+  img: Founder,
+},
+  {
+  img:  Founder,
+ },
+ {
+ img:  Founder,
+ },
+ {
+ img:  Founder,
+ },
+ {
+ img:  Founder,
+ },{
+ img: Founder,
+},
+ {
+ img:  Founder,
+},
+{
+img:  Founder,
+},
+{
+img:  Founder,
+},
+{
+img:  Founder,
+},{
+img: Founder,
+},
+{
+img:  Founder,
+},
+{
+img:  Founder,
+},
+{
+img:  Founder,
+},
+{
+img:  Founder,
+},
+    ];
 
-
+ const items = tileData.map((tile, index) => {
+     return (
+       <Col md="3" lg="4" className="mb-5" key={index}>
+         <div className="containered">
+           <img src={tile.img} alt="Avatar" className="image w-100" />
+           <div className="middle">
+             <div className="text">John Doe</div>
+           </div>
+         </div>
+       </Col>
+     )
+ })
+ const total= items.length;
 
 class Bridal extends Component {
 
@@ -49,96 +121,18 @@ class Bridal extends Component {
           </Col>
         </Row>
 
-        <Row className="justify-content-center my-5">
-          <Col md="3" lg="4" className="">
-            <div className="containered">
-              <img src={Founder} alt="Avatar" className="image w-100" />
-              <div className="middle">
-                <div className="text">John Doe</div>
-              </div>
-            </div>
-          </Col>
 
-          <Col md="3" lg="4" className="">
-            <div className="containered">
-              <img src={Founder} alt="Avatar" className="image w-100" />
-              <div className="middle">
-                <div className="text">John Doe</div>
-              </div>
-            </div>
-          </Col>
-
-          <Col md="3" lg="4" className="">
-            <div className="containered">
-              <img src={Founder} alt="Avatar" className="image w-100" />
-              <div className="middle">
-                <div className="text">John Doe</div>
-              </div>
-            </div>
-          </Col>
-        </Row>
-
-        <Row className="justify-content-center mb-5">
-          <Col md="3" lg="4" className="">
-            <div className="containered">
-              <img src={Founder} alt="Avatar" className="image w-100" />
-              <div className="middle">
-                <div className="text">John Doe</div>
-              </div>
-            </div>
-          </Col>
-
-          <Col md="3" lg="4" className="">
-            <div className="containered">
-              <img src={Founder} alt="Avatar" className="image w-100" />
-              <div className="middle">
-                <div className="text">John Doe</div>
-              </div>
-            </div>
-          </Col>
-
-          <Col md="3" lg="4" className="">
-            <div className="containered">
-              <img src={Founder} alt="Avatar" className="image w-100" />
-              <div className="middle">
-                <div className="text">John Doe</div>
-              </div>
-            </div>
-          </Col>
-        </Row>
-
-        <Row className="justify-content-center mb-5">
-          <Col md="3" lg="4" className="">
-            <div className="containered">
-              <img src={Founder} alt="Avatar" className="image w-100" />
-              <div className="middle">
-                <div className="text">John Doe</div>
-              </div>
-            </div>
-          </Col>
-
-          <Col md="3" lg="4" className="">
-            <div className="containered">
-              <img src={Founder} alt="Avatar" className="image w-100" />
-              <div className="middle">
-                <div className="text">John Doe</div>
-              </div>
-            </div>
-          </Col>
-
-          <Col md="3" lg="4" className="">
-            <div className="containered">
-              <img src={Founder} alt="Avatar" className="image w-100" />
-              <div className="middle">
-                <div className="text">John Doe</div>
-              </div>
-            </div>
-          </Col>
-        </Row>
-
-        <Row className="justify-content-center mb-5">
-          <Buttons>Load More</Buttons>
-        </Row>
+        <LimitedInfiniteScroll
+          limit={3}
+          hasMore={total === undefined || items.length < total}
+          spinLoader={<div className="loader">Loading...</div>}
+          mannualLoader={<Buttons>Load More</Buttons>}
+          noMore={<div className="loader">No More Items</div>}
+          loadNext={this.loadNextFunc}>
+          <Row className="justify-content-center my-5">
+            {items}
+          </ Row>
+        </LimitedInfiniteScroll>
       </Container>
 
       <ItemName   color="black" bgColor="#272727" divName="Footer"/>
