@@ -13,7 +13,7 @@ import StoreSmall from './img/storeSmall.png';
 class AboutUs extends Component {
   render() {
     return (
-      <div className="App" id="top">
+      <div id="top">
 
         <Navbar/>
 

@@ -20,7 +20,7 @@ import Logo3D from "./img/logo-3d.svg";
 class Root extends Component {
   render() {
     return (
-      <div id="top">
+      <div id="top" style={{textAlign:'center'}}>
 
       <div className="bgAbout">
         <Container>
@@ -37,7 +37,6 @@ class Root extends Component {
           <Row>
             <Col  className="mt-4 mb-5">
               <p className='AboutColor'>The organization started in 1980 by Mr. RAZA Mahmood. RAZA Jewellers, a premier Pakistans jewelry manufacturer, is a full service production company assisting fine jewelry retailers and designers for over a quarter century. Our heritage and reputation for quality makes us the single best source for all of your jewelry manufacturing needs. We are committed to helping our customers create fine custom designed jewelry that exceeds their expectations. We do that by providing the highest level of service and talent available in the marketplace. With the passage of time and requirements of the era, the finished form of manufactured jewelry was well appreciated by clients and the company makes its place in the market. The company is also serving the upper class with the customization facility.</p>
-              <p className='AboutColor mt-4'>The organization started in 1980 by Mr. RAZA Mahmood. RAZA Jewellers, a premier Pakistans jewelry manufacturer, is a full service production company assisting fine jewelry retailers and designers for over a quarter century. Our heritage and reputation for quality makes us the single best source for all of your jewelry manufacturing needs. We are committed to helping our customers create fine custom designed jewelry that exceeds their expectations. We do that by providing the highest level of service and talent available in the marketplace. With the passage of time and requirements of the era, the finished form of manufactured jewelry was well appreciated by clients and the company makes its place in the market. The company is also serving the upper class with the customization facility.</p>
             </Col>
           </Row>
           <Row className='align-items-center'>
@@ -66,6 +65,8 @@ class Root extends Component {
         </div>
         <p>RAZA jewelers is the brain child Mr RAZA,who dared to dream big almost 25 years  ago and with conviction set it on a roll with untarnished service. .The impeccable  quality has allowed to grow  par with international standrds of designing and  manufacturing and stringent quality control measures. Deligentally  administrated by the brothers, Hanif jewellers has today become a  Jeweller with a difference.They are  known for its bold,distinctive  designs ,especially it’s architectural styles featuring heavy gold links and it’s  creative use of coloured stones.   Hailed as eternal silvers of moonshine ,diamonds are one of the most sought after  gems,embodying Power,Passion,Previlage. Using the hardest substance borne from  the darkest core of the earth, RAZA Jewellers has imbibed the timeless magic and  romance that only diamonds can recreate.</p>
       </Container>
+
+      <ItemName  color="black" bgColor="white" divName="Map" />
 
       <ItemName   color="black" bgColor="#272727" divName="Footer"/>
 

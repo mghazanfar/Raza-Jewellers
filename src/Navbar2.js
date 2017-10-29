@@ -5,6 +5,13 @@ import Logo2 from './img/logo-2.svg';
 import Scrollchor from 'react-scrollchor';
 import Navbar from './Navbar';
 import Root from './Root';
+import Bridal from './Bridal';
+import Engagements from './About';
+import Bangles from './About';
+import Rings from './About';
+import Earings from './About';
+import Pendents from './About';
+import Diamond from './About';
 import About from './About';
 import Jewellery from './Jewellery';
 import Collections from './Collections';
@@ -42,12 +49,12 @@ export default class Navbarr extends React.Component {
               <div className="d-inline-flex">
                 <div className="ml-md-3 ml-lg-0">
                   <NavLink  to="/about" className="navbar-brand text-uppercase mr--0">About Us</NavLink >
-                  <NavLink  to="/jewellery" className="navbar-brand text-uppercase mr--0">Jewellery</NavLink >
-                  <NavLink  to="/collections" className="navbar-brand text-uppercase  mr--0">Collections</NavLink >
+                  <Scrollchor to="#jewellery" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase mr--0">Jewellery</Scrollchor >
+                  <Scrollchor to="#collections" animate={{offset: -50, duration: 800}} className="navbar-brand text-uppercase  mr--0">Collections</Scrollchor >
 
                 </div>
                 <div className="d-flex align-items-center">
-                  <NavLink  to="/"><img src={Logo2} width="400" className="d-inline-block align-top marginImg" alt=""/></NavLink >
+                  <NavLink to="/"><img src={Logo2} width="400" className="d-inline-block align-top marginImg" alt=""/></NavLink >
                 </div>
 
               <div className="d-flex ml-md-3 ml-lg-0">
@@ -63,6 +70,13 @@ export default class Navbarr extends React.Component {
           <Route path="/about" component={About} />
           <Route path="/jewellery" component={Jewellery}/>
           <Route path="/collections" component={Collections}/>
+          <Route path="/Bridal" component={Bridal} />
+          <Route path="/Diamond" component={Diamond} />
+          <Route path="/Engagements" component={Engagements} />
+          <Route path="/Bangles" component={Bangles} />
+          <Route path="/Rings" component={Rings} />
+          <Route path="/Earings" component={Earings} />
+          <Route path="/Pendents" component={Pendents} />
         </div>
     );
   }

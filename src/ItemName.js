@@ -3,6 +3,7 @@ import { Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText } 
 import './App.css';
 import Logo from "./img/logo-2D.png";
 import Store from "./img/store.png";
+import StoreMap from "./img/shopMap.png";
 import Logo3D from "./img/logo-3d.svg";
 import Gold from "./img/gold.png";
 import Diamond from "./img/diamond.png";
@@ -20,6 +21,11 @@ import TextField from 'material-ui/TextField';
 import PropTypes from 'prop-types';
 import Buttons from 'material-ui/Button';
 import TwentyTwenty from 'react-twentytwenty';
+import Scrollchor from 'react-scrollchor';
+import {
+ Route,
+ NavLink
+} from 'react-router-dom';
 
 
 const styles = theme => ({
@@ -54,7 +60,11 @@ export default class ItemName extends React.Component {
     return (
       <div id="contact">
       <Container className="text-center">
-        <img src={Logo} className="my-4" width="70px" height="110px" />
+        <div className="my-4 d-inline-block">
+          <Scrollchor to="#top" animate={{offset: -50, duration: 800}}>
+            <div className="logoMain"></div>
+          </Scrollchor>
+         </div>
         <Row className="justify-content-center">
           <Col xs="2" sm="3" md="4" className="bb-black mb-4">
           </Col>
@@ -144,9 +154,13 @@ export default class ItemName extends React.Component {
     );}
     else if(this.props.divName=="collections"){
      return (
-       <div id="partners" style={{overflow:'hidden'}}>
+       <div id="collections" style={{overflow:'hidden'}}>
          <Container className="text-center">
-           <img src={Logo} className="my-4" width="70px" height="110px" />
+           <div className="my-4 d-inline-block">
+             <Scrollchor to="#top" animate={{offset: -50, duration: 800}}>
+               <div className="logoMain"></div>
+             </Scrollchor>
+            </div>
            <Row className="justify-content-center">
              <Col xs="2" sm="3" md="4" className="bb-black mb-4">
              </Col>
@@ -159,13 +173,13 @@ export default class ItemName extends React.Component {
            <Row>
             <Col xs="4" className="mt-5">
               <ul className="list-unstyled text-left pb-26">
-                <li className="text-uppercase my-3"><a href="#" className="text-black"><h4>bridal jewellery</h4></a></li>
-                <li className="text-uppercase my-3"><a href="#" className="text-black"><h4>diamond jewellery</h4></a></li>
-                <li className="text-uppercase my-3"><a href="#" className="text-black"><h4>engagements</h4></a></li>
-                <li className="text-uppercase my-3"><a href="#" className="text-black"><h4>bangles</h4></a></li>
-                <li className="text-uppercase my-3"><a href="#" className="text-black"><h4>rings</h4></a></li>
-                <li className="text-uppercase my-3"><a href="#" className="text-black"><h4>earings</h4></a></li>
-                <li className="text-uppercase my-3"><a href="#" className="text-black"><h4>pendents</h4></a></li>
+                <li className="my-3"><h4><NavLink  to="/Bridal" className="navbar-brand text-uppercase mr--0 text-black">bridal jewellery</NavLink ></h4></li>
+                <li className="my-3"><h4><NavLink  to="/Diamond" className="navbar-brand text-uppercase mr--0 text-black">diamond jewellery</NavLink ></h4></li>
+                <li className="my-3"><h4><NavLink  to="/Engagements" className="navbar-brand text-uppercase mr--0 text-black">engagements</NavLink ></h4></li>
+                <li className="my-3"><h4><NavLink  to="/Bangles" className="navbar-brand text-uppercase mr--0 text-black">bangles</NavLink ></h4></li>
+                <li className="my-3"><h4><NavLink  to="/Rings" className="navbar-brand text-uppercase mr--0 text-black">rings</NavLink ></h4></li>
+                <li className="my-3"><h4><NavLink  to="/Earings" className="navbar-brand text-uppercase mr--0 text-black">earings</NavLink ></h4></li>
+                <li className="my-3"><h4><NavLink  to="/Pendents" className="navbar-brand text-uppercase mr--0 text-black">pendents</NavLink ></h4></li>
               </ul>
             </Col>
            </Row>
@@ -181,7 +195,7 @@ export default class ItemName extends React.Component {
           <Row className="justify-content-center">
             <Col xs="12"><div className="w-100 h-100" style={style, {backgroundImage: "url(" + this.props.img + ")", backgroundSize:'cover', position:'absolute'}}></div>
               <div style={{position:'relative'}}>
-                <img src={Logo3D} className="my-4" width="60px" height="120px" />
+                <img src={Logo3D} className="mt-4 mb-2" width="70px" height="110px" />
               </div>
               <Container>
                 <Row className="justify-content-center">
@@ -196,7 +210,7 @@ export default class ItemName extends React.Component {
                     <p className="text-center text-white">The organization started in 1980 by Mr. RAZA Mahmood. RAZA Jewellers, a premier "Pakistan's" jewelry manufacturer, is a full service production company assisting fine jewelry retailers and designers for over a quarter century. Our heritage and reputation for quality makes us the single best source for all of your jewelry manufacturing needs.</p>
                   </Col>
                   <Col xs="12">
-                    <Buttons color="contrast" className="mb-4">Find out More</Buttons>
+                    <Buttons color="contrast" className="mb-4"><NavLink  to="/about" className="text-white">Find out More</NavLink ></Buttons>
                   </Col>
                 </Row>
               </Container>
@@ -207,9 +221,13 @@ export default class ItemName extends React.Component {
     );}
      else if(this.props.divName=="Jewellery"){
       return (
-    <div id="easy">
+    <div id="jewellery">
       <Container className="text-center">
-        <img src={Logo} className="my-4" width="70px" height="110px" />
+        <div className="my-4 d-inline-block">
+          <Scrollchor to="#top" animate={{offset: -50, duration: 800}}>
+            <div className="logoMain"></div>
+           </Scrollchor>
+         </div>
         <Row className="justify-content-center">
           <Col xs="2" sm="3" md="4" className="bb-black mb-4">
           </Col>
@@ -250,7 +268,11 @@ export default class ItemName extends React.Component {
        return (
      <div id="Map">
        <Container className="text-center">
-         <img src={Logo} className="my-4" width="70px" height="110px" />
+         <div className="my-4 d-inline-block">
+           <Scrollchor to="#top" animate={{offset: -50, duration: 800}}>
+             <div className="logoMain"></div>
+           </Scrollchor>
+          </div>
          <Row className="justify-content-center">
            <Col xs="2" sm="3" md="4" className="bb-black mb-4">
            </Col>
@@ -263,8 +285,10 @@ export default class ItemName extends React.Component {
          <Row className="justify-content-center my-5  no-gutters">
            <Col xs="11">
             <TwentyTwenty>
-              <img src={Store} className="w-100 h-100" width="100%" />
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.448238253813!2d74.3409553150146!3d31.511846754716156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045bc5d9b23d%3A0x748dbe5642a90987!2zUkFaQSBKZXdlbGxlcnMg2LHYttinINis24zZiNmE2LHYsg!5e0!3m2!1sen!2s!4v1507806747222" width="100%" height="600px" frameBorder="1" style={{border:0}} allowfullscreen />
+              <img src={StoreMap} className="w-100" height="700px"/>
+              <div className="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.448238253813!2d74.3409553150146!3d31.511846754716156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045bc5d9b23d%3A0x748dbe5642a90987!2zUkFaQSBKZXdlbGxlcnMg2LHYttinINis24zZiNmE2LHYsg!5e0!3m2!1sen!2s!4v1507806747222" width="100%" height="700px" frameBorder="1" style={{border:0}} allowfullscreen />
+              </div>
               <div className="sliderr" />
             </TwentyTwenty>
             </Col>
@@ -276,7 +300,11 @@ export default class ItemName extends React.Component {
       return (
         <div id="media">
           <Container className="text-center">
-            <img src={Logo} className="my-4" width="70px" height="110px" />
+            <div className="my-4 d-inline-block">
+              <Scrollchor to="#top" animate={{offset: -50, duration: 800}}>
+                <div className="logoMain"></div>
+              </Scrollchor>
+             </div>
             <Row className="justify-content-center">
               <Col xs="2" sm="3" md="4" className="bb-black mb-4">
               </Col>
@@ -295,7 +323,11 @@ export default class ItemName extends React.Component {
             </Row>
           </div>
           <Container className="text-center" id="promotions">
-            <img src={Logo} className="my-4" width="70px" height="110px" />
+            <div className="my-4 d-inline-block">
+              <Scrollchor to="#top" animate={{offset: -50, duration: 800}}>
+                <div className="logoMain"></div>
+              </Scrollchor>
+             </div>
             <Row className="justify-content-center">
               <Col xs="2" sm="3" md="4" className="bb-black mb-4">
               </Col>
@@ -327,13 +359,15 @@ export default class ItemName extends React.Component {
                       <li>11:30am to 9:00pm, Sunday Close</li>
 
                       <li className="mt-5"><h4>Contact</h4></li>
-                      <li>razajewellers1980@gmail.com</li>
+                      <li><a href="https://www.gmail.com" target="_blank" className="text-grey">razajewellers1980@gmail.com</a></li>
                       <li>+92423578133, +923219888863, +923214669924.</li>
                     </ul>
                    </Col>
                    <Col xs="12" md="4" className="px-md-0">
-                    <img src={Logo3D} height="180px" width="180px" />
-                    <img src={Logo1} className="mt-3 text-white" width="230px" />
+                     <Scrollchor to="#top" animate={{offset: -50, duration: 800}}>
+                        <img src={Logo3D} height="180px" width="180px" />
+                        <img src={Logo1} className="mt-3 text-white" width="230px" />
+                      </Scrollchor>
                    </Col>
                    <Col xs="10" md="4" className="bt-white-md bb-white px-0 mb-5 mt-5 mt-md-0">
                     <ul className="list-unstyled text-center text-md-right text-grey mt-5 mt-md-0">
@@ -358,7 +392,10 @@ export default class ItemName extends React.Component {
                     </li>
 
                       <li className="mt-3"><h4>Store</h4></li>
-                      <li className="mt-3">Building Sunfort Hotel, 24-G, Liberty Market,Gulberg III, Lahore</li>
+                      <Scrollchor to="#Map" animate={{offset: -50, duration: 800}} className="text-grey">
+                        Hotel Sunfort Building 24-G, Liberty Market,Gulberg III, Lahore
+                       </Scrollchor>
+                      <li className="mt-3"></li>
 
 
                       </ul>

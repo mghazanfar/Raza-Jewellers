@@ -13,6 +13,21 @@ body {
 	width: 99% !important;
 }
 
+.logoMain {
+	height: 110px;
+	width: 70px;
+	background-image: url(./img/logo-2D.png);
+	background-size: cover;
+	transition: background-image 0.25s ease-in-out;
+}
+
+.logoMain:hover {
+	height: 110px;
+	width: 70px;
+	background-size: cover;
+	background-image: url(./img/logo-3d.svg);
+}
+
 .size-logo {
     width: 32px;
     height: 32px;
@@ -50,6 +65,11 @@ body {
   background-size: cover;
 }
 
+
+.map-container iframe.clicked{
+	pointer-events: auto;
+}
+
 .bg-black {
   background-color: black;
 }
@@ -82,8 +102,44 @@ body {
 			display: none !important;
 	 	}
   }
+	.container {
+	    position: relative;
+	    width: 50%;
+	}
 
+	.image {
+	  opacity: 1;
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	  transition: .5s ease;
+	  backface-visibility: hidden;
+	}
 
+	.middle {
+	  transition: .5s ease;
+	  opacity: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%)
+	}
+
+	.containered:hover .image {
+	  opacity: 0.3;
+	}
+
+	.containered:hover .middle {
+	  opacity: 1;
+	}
+
+	.text {
+	  background-color: #4CAF50;
+	  color: white;
+	  font-size: 16px;
+	  padding: 16px 32px;
+	}
 
 .bb-black {
   border-bottom: 1px solid black;
