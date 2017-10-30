@@ -3,10 +3,21 @@
 	src: url('./gothic.eot');
 	src: local('gothic'), url('./gothic.woff') format('woff'), url('./gothic.ttf') format('truetype');
 }
+
+@font-face {
+	font-family: 'modern';
+	src: url('./modern.ttf');
+	src: local('modern'), url('./modern.ttf') format('truetype');
+}
 body {
 	background: #DDD;
 	font-size: 15px;
   font-family: 'gothic' !important;
+}
+
+h3 {
+	font-family: 'modern' !important;
+  letter-spacing: 4pt;
 }
 
 .w-99 {
@@ -14,18 +25,18 @@ body {
 }
 
 .logoMain {
-	height: 110px;
+	height: 112px;
 	width: 70px;
-	background-image: url(./img/logo-2D.png);
+	background-image: url(./img/black.png);
 	background-size: cover;
 	transition: background-image 0.25s ease-in-out;
 }
 
 .logoMain:hover {
-	height: 110px;
+	height: 112px;
 	width: 70px;
 	background-size: cover;
-	background-image: url(./img/logo-3d.svg);
+	background-image: url(./img/color.png);
 }
 
 .size-logo {
