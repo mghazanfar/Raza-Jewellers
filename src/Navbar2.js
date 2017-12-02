@@ -6,12 +6,12 @@ import Scrollchor from 'react-scrollchor';
 import Navbar from './Navbar';
 import Root from './Root';
 import Bridal from './Bridal';
-import Engagements from './About';
-import Bangles from './About';
-import Rings from './About';
-import Earings from './About';
-import Pendents from './About';
-import Diamond from './About';
+import Engagements from './Engagements';
+import Bangles from './Bangles';
+import Rings from './Rings';
+import Earings from './Earings';
+import Pendents from './Pendents';
+import Diamond from './Diamond';
 import About from './About';
 import Jewellery from './Jewellery';
 import Collections from './Collections';
@@ -19,7 +19,8 @@ import Slick from './SlickCarousel';
 import ItemName from './ItemName';
 import {
  Route,
- NavLink
+ NavLink,
+ Switch,
 } from 'react-router-dom';
 
 export default class Navbarr extends React.Component {
@@ -66,17 +67,19 @@ export default class Navbarr extends React.Component {
 
             </div>
           </nav>
-          <Route exact path="/" component={Root}/>
-          <Route path="/about" component={About} />
-          <Route path="/jewellery" component={Jewellery}/>
-          <Route path="/collections" component={Collections}/>
-          <Route path="/Bridal" component={Bridal} />
-          <Route path="/Diamond" component={Diamond} />
-          <Route path="/Engagements" component={Engagements} />
-          <Route path="/Bangles" component={Bangles} />
-          <Route path="/Rings" component={Rings} />
-          <Route path="/Earings" component={Earings} />
-          <Route path="/Pendents" component={Pendents} />
+          <Switch>
+            <Route exact path="/" component={Root}/>
+            <Route path="/about" component={About} />
+            <Route path="/jewellery" component={Jewellery}/>
+            <Route path="/collections" component={Collections}/>
+            <Route path="/Bridal" component={Bridal} />
+            <Route path="/Diamond" component={Diamond} />
+            <Route path="/Engagements" component={Engagements} />
+            <Route path="/Bangles" component={Bangles} />
+            <Route path="/Rings" component={Rings} />
+            <Route path="/Earings" component={Earings} />
+            <Route path="/Pendents" component={Pendents} />
+          </Switch>
         </div>
     );
   }
