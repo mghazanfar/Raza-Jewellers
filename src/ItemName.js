@@ -5,10 +5,10 @@ import Logo from "./img/logo-2D.png";
 import Store from "./img/store.png";
 import StoreMap from "./img/shopMap.png";
 import Logo3D from "./img/logo-3d.svg";
-import Gold from "./img/gold.png";
-import Diamond from "./img/diamond.png";
-import Watches from "./img/watches.png";
-import Pearl from "./img/pearl.png";
+import New1 from "./img/new1.jpg";
+import New2 from "./img/new2.jpg";
+import New3 from "./img/new5.jpg";
+import New4 from "./img/new4.jpg";
 import Sale from "./img/sale.png";
 import Logo1 from './img/logo1-white.svg';
 import Facebook from './img/facebook.svg';
@@ -239,25 +239,25 @@ export default class ItemName extends React.Component {
         </Row>
         <Row className="justify-content-center my-5  no-gutters">
           <Col md="8" lg="5" className="">
-            <a href="#"><img src={Gold} className="h-100 w-100 img-fluid" /></a>
+            <a href="#"><img src={New1} className="h-100 w-100 img-fluid" /></a>
           </Col>
           <Col lg="3" className="hidden-md-down">
             <Row>
-              <a href="#"><img src={Diamond} className="h-100 w-100 img-fluid" /></a>
+              <a href="#"><img src={New2} className="h-100 w-100 img-fluid" /></a>
             </Row>
             <Row>
-              <a href="#"><img src={Watches} className="w-100 img-fluid" /></a>
+              <a href="#"><img src={New3} className="w-100 img-fluid" /></a>
             </Row>
           </Col>
           <Col md="4" lg="4">
-            <a href="#"><img src={Pearl} className="h-100 w-100 img-fluid" /></a>
+            <a href="#"><img src={New4} className="h-100 w-100 img-fluid" /></a>
           </Col>
           <Row md="12" lg="3" className="hidden-lg-up no-gutters">
             <Col xs="6">
-              <a href="#"><img src={Diamond} className="h-75 w-100 img-fluid" /></a>
+              <a href="#"><img src={New2} className="h-75 w-100 img-fluid" /></a>
             </Col>
             <Col xs="6">
-              <a href="#"><img src={Watches} className="w-100 h-75 img-fluid" /></a>
+              <a href="#"><img src={New3} className="w-100 h-75 img-fluid" /></a>
             </Col>
           </Row>
         </Row>

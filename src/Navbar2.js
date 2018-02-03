@@ -19,7 +19,7 @@ import Slick from './SlickCarousel';
 import ItemName from './ItemName';
 import {
  Route,
- NavLink,
+ Link,
  Switch,
 } from 'react-router-dom';
 
@@ -49,13 +49,13 @@ export default class Navbarr extends React.Component {
 
               <div className="d-inline-flex">
                 <div className="ml-md-3 ml-lg-0">
-                  <NavLink  to="/about" className="navbar-brand text-uppercase mr--0">About Us</NavLink >
+                  <Link  to="/about" className="navbar-brand text-uppercase mr--0">About Us</Link>
                   <Scrollchor to="#jewellery" animate={{offset: -50, duration: 800}}  className="navbar-brand text-uppercase mr--0">Jewellery</Scrollchor >
                   <Scrollchor to="#collections" animate={{offset: -50, duration: 800}} className="navbar-brand text-uppercase  mr--0">Collections</Scrollchor >
 
                 </div>
                 <div className="d-flex align-items-center">
-                  <NavLink to="/"><img src={Logo2} width="400" className="d-inline-block align-top marginImg" alt=""/></NavLink >
+                  <Link to="/"><img src={Logo2} width="400" className="d-inline-block align-top marginImg" alt=""/></Link>
                 </div>
 
               <div className="d-flex ml-md-3 ml-lg-0">

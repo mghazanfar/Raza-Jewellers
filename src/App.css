@@ -138,7 +138,7 @@ h3 {
 	}
 
 	.containered:hover .image {
-	  opacity: 0.3;
+	  opacity: 0.2;
 	}
 
 	.containered:hover .middle {
@@ -146,8 +146,7 @@ h3 {
 	}
 
 	.text {
-	  background-color: #4CAF50;
-	  color: white;
+	  color: black;
 	  font-size: 16px;
 	  padding: 16px 32px;
 	}
