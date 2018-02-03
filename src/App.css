@@ -3,28 +3,82 @@
 	src: url('./gothic.eot');
 	src: local('gothic'), url('./gothic.woff') format('woff'), url('./gothic.ttf') format('truetype');
 }
+
+@font-face {
+	font-family: 'modern';
+	src: url('./modern.ttf');
+	src: local('modern'), url('./modern.ttf') format('truetype');
+}
 body {
 	background: #DDD;
 	font-size: 15px;
   font-family: 'gothic' !important;
 }
 
+h3 {
+	font-family: 'modern' !important;
+  letter-spacing: 4pt;
+}
+
 .w-99 {
 	width: 99% !important;
 }
 
-.size-logo {
-  width: 32px;
-  height: 32px;
+.logoMain {
+	height: 112px;
+	width: 70px;
+	background-image: url(./img/black.png);
+	background-size: cover;
+	transition: background-image 0.25s ease-in-out;
 }
 
-.App {
-  text-align: center;
+.logoMain:hover {
+	height: 112px;
+	width: 70px;
+	background-size: cover;
+	background-image: url(./img/color.png);
+}
+
+.size-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.sliderr {
+  height: 100%;
+  width: 15px;
+  background: #CFB53B	;
+	border: 2px solid #D4AF37;
+}
+
+@media (min-width: 992px) and (max-width: 1084px) {
+	.mr--0 {
+		margin-right: 0px !important;
+	}
+ }
+
+ .marginImg {
+	 margin-left: 1.5rem;
+	 margin-right: 2rem;
+ }
+
+
+.textUnderline {
+	text-decoration: none;
+}
+
+.textUnderline:hover {
+	text-decoration: underline !important;
 }
 
 .bgAbout {
   background-image: url(../src/img/BigAboutUs.png);
   background-size: cover;
+}
+
+
+.map-container iframe.clicked{
+	pointer-events: auto;
 }
 
 .bg-black {
@@ -47,6 +101,56 @@ body {
   border-bottom: 1px solid white;
 }
 
+@media (max-width: 767px) {
+	.bt-white-md {
+	  border-top: 1px solid white;
+		margin-top: 1rem !important;
+	}
+ }
+
+ @media (max-width: 1243px) {
+	 	.hidden-nav2 {
+			display: none !important;
+	 	}
+  }
+	.container {
+	    position: relative;
+	    width: 50%;
+	}
+
+	.image {
+	  opacity: 1;
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	  transition: .5s ease;
+	  backface-visibility: hidden;
+	}
+
+	.middle {
+	  transition: .5s ease;
+	  opacity: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%)
+	}
+
+	.containered:hover .image {
+	  opacity: 0.2;
+	}
+
+	.containered:hover .middle {
+	  opacity: 1;
+	}
+
+	.text {
+	  color: black;
+	  font-size: 16px;
+	  padding: 16px 32px;
+	}
+
 .bb-black {
   border-bottom: 1px solid black;
 }
@@ -58,13 +162,15 @@ body {
 .slick-prev {
   left: 29px !important;
   z-index: 1;
+	display: none;
 }
 
 .slick-next {
   right: 29px !important;
+	display: none;
 }
 
 
 .slickMargin {
-  margin-top: 3.5rem !important;
+  margin-top: 5.35rem !important;
 }

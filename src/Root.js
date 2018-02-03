@@ -14,9 +14,9 @@ import Store from './img/store.png';
 class Root extends Component {
   render() {
     return (
-      <div className="App" id="top">
+      <div className="slickMargin mt-lg-0">
 
-        <Slick className="mt-5 mt-md-0"/>
+        <Slick className="mt-5"/>
 
         <ItemName  className="mt-6" text="About Us" color="#fff" bgColor="#271A00" divName="About Us" img={About}/>
 
@@ -25,6 +25,8 @@ class Root extends Component {
         <ItemName  color="black" bgColor="white" divName="collections" img={Strips}/>
 
         <ItemName  color="black" bgColor="white" divName="Media" img={Soon}/>
+
+        <ItemName  color="black" bgColor="white" divName="Map" />
 
         <ItemName  color="black" bgColor="white" divName="Contact" img={Store}/>
 

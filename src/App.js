@@ -14,18 +14,20 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import {
  BrowserRouter as Router
 } from 'react-router-dom';
-
+import Logo3D from "./img/logo-3d.svg";
 
 
 
 class App extends Component {
+
+
   render() {
     return (
 
     <Router>
-      <div className="App" id="top">
+      <div id="top">
 
-        <Navbar className="hidden-sm-down"/>
+        <Navbar/>
 
         <Navbar2 className=""/>
 
